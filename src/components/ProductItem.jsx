@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { FavoriteBorderOutlined, SearchOutlined } from "@mui/icons-material";
+import { mobile } from "../responsive";
 
 const InfoContainer = styled.div`
   opacity: 0;
@@ -21,7 +22,7 @@ const InfoContainer = styled.div`
 const Container = styled.div`
   flex: 1;
   margin: 5px;
-  min-width: 370px;
+  min-width: 390px;
   height: 350px;
   display: flex;
   align-items: center;
@@ -31,7 +32,9 @@ const Container = styled.div`
   &:hover ${InfoContainer} {
     opacity: 1;
   }
+  ${mobile({ minWidth: "280px" })}
 `;
+
 const Circle = styled.div`
   width: 200px;
   height: 200px;
@@ -39,6 +42,7 @@ const Circle = styled.div`
   background-color: white;
   position: absolute;
 `;
+
 const Image = styled.img`
   height: 75%;
   z-index: 2;
