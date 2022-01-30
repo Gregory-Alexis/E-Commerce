@@ -11,7 +11,7 @@ const Container = styled.div`
   font-weight: 500;
 `;
 
-const Annoucement = () => {
+const Announcement = () => {
   return (
     <Container>
       Bonnes Affaires! Livraison gratuite sur les commandes de plus de 50 euros
@@ -19,4 +19,4 @@ const Annoucement = () => {
   );
 };
 
-export default Annoucement;
+export default Announcement;
